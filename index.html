@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Joachim, développeur bas niveau : C, C++ et Rust. Systèmes, performance et code bas niveau en C, C++ et Rust.">
+<meta name="theme-color" content="#f2f1ed">
+<title>Joachim</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300..800&family=Geist+Mono:wght@400..600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="#top" data-i18n-aria="nav.home" aria-label="Joachim — accueil">
+      <img class="brand-logo" src="assets/blackenium-logo.png" width="38" height="26" alt="">
+    </a>
+    <p class="nav-mid" data-i18n="nav.mid">Dev back-end &amp; systèmes — en recherche d’alternance</p>
+    <div class="lang" role="group" aria-label="Langue / Language">
+      <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+</header>
+
+<nav class="dock" aria-label="Sections">
+  <a href="#experiences" data-i18n="dock.xp">Expériences</a>
+  <a href="#langages" data-i18n="dock.stack">Langages</a>
+  <a href="#projets" data-i18n="dock.projects">Projets</a>
+  <a href="#contact" class="cta" data-i18n="dock.contact">Contact</a>
+</nav>
+
+<main>
+  <section id="top" class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="hero.eyebrow">Développeur back-end &amp; bas niveau</p>
+        <h1 class="hero-title">
+          <span class="hero-title-line"><span class="w" data-i18n="hero.t1a">Dev</span> <span class="w" data-i18n="hero.t1b">C, C++</span> <span class="w" data-i18n="hero.t1c">&amp; Rust.</span></span>
+          <span class="hero-title-line"><span class="w" data-i18n="hero.t2a">En quête</span> <span class="w" data-i18n="hero.t2b">d’une</span></span>
+          <span class="hero-title-line"><span class="hero-impact"><svg class="hero-marker" viewBox="0 0 400 100" preserveAspectRatio="none" aria-hidden="true" focusable="false"><path class="hero-marker-pass" pathLength="1" stroke-width="34" d="M12 37C87 31 146 39 211 34S328 28 385 34"/><path class="hero-marker-pass" pathLength="1" stroke-width="32" d="M20 69C95 68 177 57 255 61S343 65 383 60"/></svg><span class="w" data-i18n="hero.t2c">alternance.</span></span></span>
+        </h1>
+        <div class="hero-intro">
+          <p class="say" data-i18n-html="hero.say">Je suis <span class="pill me"><img src="assets/joachim.jpg" alt="" width="96" height="96">Joachim</span>, développeur à l’aise aussi bien au plus près de la machine (C, C++, Rust) que côté web.</p>
+          <p class="say hero-promise"><span data-i18n="hero.promise">J’écris du code</span>
+            <span class="rot" aria-live="off"><span class="rot-in" data-rot><span class="rot-w is-on" data-i18n="hero.rot1">rapide.</span><span class="rot-w" data-i18n="hero.rot2">sûr.</span><span class="rot-w" data-i18n="hero.rot3">sans fuite.</span><span class="rot-w" data-i18n="hero.rot4">propre.</span></span></span>
+          </p>
+        </div>
+        <p class="ctas">
+          <a class="btn" href="#projets"><span data-i18n="hero.cta1">Voir les projets</span><span class="ar" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span></a>
+          <a class="btn ghost" href="https://github.com/0jikuji0" target="_blank" rel="noopener"><span class="prompt" aria-hidden="true">$</span> <span data-i18n="hero.cta2">git clone 0jikuji0</span></a>
+          <a class="btn btn-li" href="https://www.linkedin.com/in/joachim-lefort/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+        </p>
+      </div>
+
+      <aside class="lanyard" data-i18n-aria="badge.label" aria-label="Mon profil en bref">
+        <svg class="lanyard-cord" viewBox="0 0 360 480" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+          <defs>
+            <path id="cord-l" d="M126 0 Q120 80 180 115"/>
+            <path id="cord-r" d="M234 0 Q240 80 180 115"/>
+          </defs>
+          <g><use class="cord-shadow" href="#cord-l"/><use class="cord-edge" href="#cord-l"/><use class="cord-face" href="#cord-l"/><use class="cord-weave" href="#cord-l"/><text class="cord-print"><textPath href="#cord-l">JOACHIM ✦ C · C++ · RUST ✦ JOACHIM ✦ C · C++ · RUST ✦</textPath></text></g>
+          <g><use class="cord-shadow" href="#cord-r"/><use class="cord-edge" href="#cord-r"/><use class="cord-face" href="#cord-r"/><use class="cord-weave" href="#cord-r"/><text class="cord-print"><textPath href="#cord-r">JOACHIM ✦ C · C++ · RUST ✦ JOACHIM ✦ C · C++ · RUST ✦</textPath></text></g>
+        </svg>
+
+        <div class="pass-card" tabindex="0" role="group" data-i18n-aria="badge.grip" aria-label="Badge — utilisez les flèches gauche et droite pour le faire bouger">
+          <svg class="pass-hook" viewBox="0 0 40 48" aria-hidden="true" focusable="false"><defs><linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#7f807a"/><stop offset=".32" stop-color="#f6f6f1"/><stop offset=".58" stop-color="#b3b4ad"/><stop offset=".8" stop-color="#fbfbf6"/><stop offset="1" stop-color="#83847e"/></linearGradient></defs><rect x="11" y="3" width="18" height="14" rx="2.5" fill="url(#metal)" stroke="#6c6d67" stroke-width=".8"/><path d="M12 7.5h16M12 12.5h16" stroke="rgba(13,13,12,.22)" stroke-width=".8"/><rect x="17.2" y="16.5" width="5.6" height="4.5" rx="1.2" fill="url(#metal)" stroke="#6c6d67" stroke-width=".7"/><circle cx="20" cy="24" r="3.4" fill="none" stroke="url(#metal)" stroke-width="2.2"/><path d="M16.6 27.6h6.8v3.2c0 3.8-1.5 6.6-3.4 8.6-1.9-2-3.4-4.8-3.4-8.6z" fill="url(#metal)" stroke="#6c6d67" stroke-width=".7"/></svg>
+          <div class="pass-top">
+            <span class="pass-symbol"><svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M22 4v8M32 4v8M42 4v8M22 52v8M32 52v8M42 52v8M4 22h8M4 32h8M4 42h8M52 22h8M52 32h8M52 42h8" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><rect x="12" y="12" width="40" height="40" rx="8" fill="currentColor"/><rect x="24" y="24" width="16" height="16" rx="3" fill="#ff4f12"/></svg></span>
+            <span class="pass-edition" data-i18n="badge.edition">Le profil / en bref</span>
+          </div>
+          <div class="pass-proof"><strong class="pass-number">3<span>+</span></strong><span class="pass-experience" data-i18n="badge.experience">ans les mains dans la mémoire</span></div>
+          <div class="pass-refs"><span class="pass-kicker" data-i18n="badge.languages">Langages</span><div class="pass-brands"><span>C</span><i aria-hidden="true">×</i><span>C++</span><i aria-hidden="true">×</i><span>Rust</span></div></div>
+          <div class="pass-location"><span class="tri" aria-hidden="true"></span><span data-i18n="badge.location">France · remote OK</span></div>
+          <div class="pass-note"><span class="pass-kicker" data-i18n="badge.field">Terrain</span><span data-i18n="badge.fieldValue">Système · Back-end</span></div>
+          <span class="pass-sleeve" aria-hidden="true"></span>
+          <span class="pass-band" aria-hidden="true"><i class="pass-barcode"></i><b>0xDEADBEEF · 2026</b><i class="pass-holo"></i></span>
+        </div>
+      </aside>
+    </div>
+    <div class="hero-scroll"><a class="scroll-cue" href="#experiences"><span class="scroll-label">Scroll</span><b aria-hidden="true"></b></a></div>
+  </section>
+
+  <section id="experiences" class="xp">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <p class="eyebrow" data-n="01" data-i18n="xp.kicker">Parcours</p>
+          <h2 class="sec-title" data-i18n="xp.title">Expériences</h2>
+        </div>
+        <p class="lead" data-i18n="xp.lead">Du logiciel de gestion d’entrepôt à l’entraînement de LLM : ce que j’ai construit en entreprise.</p>
+      </div>
+
+      <div class="xp-stack">
+        <article class="xcard" aria-labelledby="xp-tmh-role">
+          <div class="xc-side">
+            <a class="xc-logo" href="https://www.tmh-transports.com/" target="_blank" rel="noopener"><img src="assets/tmh-logo.png" alt="TMH Transports" width="280" height="74"></a>
+            <p class="xc-meta"><span class="xc-type" data-i18n="xp.tmh.type">Alternance</span><span class="yrs">08.2025 – 06.2027</span><span>Saint-Ouen-l’Aumône (95)</span></p>
+            <span class="xc-year" aria-hidden="true">01</span>
+          </div>
+          <div class="xc-main">
+            <h3 class="xc-role" id="xp-tmh-role" data-i18n="xp.tmh.role">Développeur en alternance</h3>
+            <p class="xc-co"><span>TMH Transports</span> · <span data-i18n="xp.tmh.sector">Transport d’œuvres d’art</span></p>
+            <ul class="xc-list">
+              <li data-i18n="xp.tmh.m1">Développement du logiciel web de gestion d’entrepôt : stocks, réceptions, picking, expéditions et planning.</li>
+              <li data-i18n="xp.tmh.m2">Configuration et mise en production des serveurs.</li>
+              <li data-i18n="xp.tmh.m3">Programmes en Rust pour rendre les migrations de données beaucoup plus rapides.</li>
+            </ul>
+            <dl class="xc-stack">
+              <div><dt data-i18n="xp.framework">Framework</dt><dd><span class="chip">Laravel</span></dd></div>
+              <div><dt data-i18n="xp.languages">Langages</dt><dd><span class="chip">PHP</span><span class="chip">Rust</span><span class="chip">Python</span></dd></div>
+            </dl>
+          </div>
+          <figure class="xc-shot">
+            <a href="assets/tmh-wms.jpg" target="_blank" rel="noopener"><img src="assets/tmh-wms.jpg" alt="Accueil du logiciel de gestion d’entrepôt développé pour TMH : stocks, réception, picking, expéditions, attendus et planning" data-i18n-alt="xp.tmh.shotalt" width="1600" height="1004" loading="lazy"></a>
+          </figure>
+        </article>
+
+        <article class="xcard" aria-labelledby="xp-nomad-role">
+          <div class="xc-side">
+            <a class="xc-logo" href="https://www.nomadeducation.fr/" target="_blank" rel="noopener"><img src="assets/nomad-logo.svg" alt="Nomad Education" width="137" height="45"></a>
+            <p class="xc-meta"><span class="xc-type" data-i18n="xp.nomad.type">Stage</span><span class="yrs">11.2024 – 02.2025</span></p>
+            <span class="xc-year" aria-hidden="true">02</span>
+          </div>
+          <div class="xc-main">
+            <h3 class="xc-role" id="xp-nomad-role" data-i18n="xp.nomad.role">Développeur stagiaire</h3>
+            <p class="xc-co"><span>Nomad Education</span> · <span data-i18n="xp.nomad.sector">App de révision, du primaire au bac</span></p>
+            <ul class="xc-list">
+              <li data-i18n="xp.nomad.m1">Corrections et fiabilisation des données en base MongoDB.</li>
+              <li data-i18n="xp.nomad.m2">Entraînement de modèles de langage (LLM).</li>
+              <li data-i18n="xp.nomad.m3">Sites internes pour organiser la répartition des tâches entre les équipes.</li>
+              <li data-i18n="xp.nomad.m4">Tests de l’application Android, avec remontée et documentation des bugs.</li>
+            </ul>
+            <dl class="xc-stack">
+              <div><dt data-i18n="xp.languages">Langages</dt><dd><span class="chip">Python</span></dd></div>
+              <div><dt data-i18n="xp.ai">IA</dt><dd><span class="chip">PyTorch</span><span class="chip">LLM</span></dd></div>
+              <div><dt data-i18n="xp.data">Base de données</dt><dd><span class="chip">MongoDB</span></dd></div>
+              <div><dt data-i18n="xp.qa">Tests</dt><dd><span class="chip">Android</span></dd></div>
+            </dl>
+          </div>
+        </article>
+
+        <article id="contact" class="xcard xc-you" aria-labelledby="xp-you-role">
+          <div class="xc-side">
+            <span class="xc-q" aria-hidden="true">?</span>
+            <p class="xc-meta"><span class="xc-type" data-i18n="xp.you.type">Alternance</span><span data-i18n="xp.you.when">Prochaine étape</span></p>
+            <span class="xc-year" aria-hidden="true">03</span>
+          </div>
+          <div class="xc-main">
+            <h3 class="xc-role" id="xp-you-role" data-i18n="xp.you.role">Peut-être vous ?</h3>
+            <p class="xc-you-txt" data-i18n="xp.you.txt">Je cherche ma prochaine alternance en développement back-end ou bas niveau. Si votre équipe a besoin de quelqu’un qui aime comprendre ce qui se passe sous le capot, parlons-en.</p>
+            <p class="ctas">
+              <a class="btn" href="mailto:lefortjoachim@pm.me"><span data-i18n="xp.you.cta">Me contacter</span><span class="ar" aria-hidden="true"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg></span></span></a>
+              <a class="btn ghost" href="https://github.com/0jikuji0" target="_blank" rel="noopener"><span class="prompt" aria-hidden="true">$</span> git clone 0jikuji0</a>
+              <a class="btn btn-li" href="https://www.linkedin.com/in/joachim-lefort/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="langages" class="langs">
+    <div class="wrap">
+      <div class="sec-head langs-head">
+        <div>
+          <p class="eyebrow" data-n="02" data-i18n="langs.kicker">Langages &amp; outils</p>
+          <h2 class="sec-title" data-i18n="langs.title">Ce que je pratique.</h2>
+        </div>
+        <p class="count"><span class="n" data-count>21</span><span class="l" data-i18n="langs.count">technos</span></p>
+      </div>
+      <div class="og">
+        <div class="tf" role="group" data-i18n-aria="langs.filter" aria-label="Filtrer les technos"></div>
+        <div class="og-stage" data-globe>
+          <div class="og-tip" role="status" aria-live="polite"><b></b><span></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projets" class="projects">
+    <div class="wrap">
+      <div class="proj-head">
+        <div>
+          <p class="eyebrow" data-n="03" data-i18n="proj.kicker">Réalisations</p>
+          <h2 class="sec-title" data-i18n="proj.title">Projets</h2>
+        </div>
+        <p class="lead" data-i18n="proj.lead">Une sélection de ce que je construis, du back-end au bas niveau.</p>
+      </div>
+
+      <div class="proj-grid">
+        <article class="pcard">
+          <div class="pc-head">
+              <p class="pc-meta"><span class="pc-n">01</span><span class="ld rs">Rust</span><span class="ld nx">Nuxt</span><span class="pc-wip" data-i18n="proj.oss">Open source</span><span>AGPL-3.0</span></p>
+              <h3 class="pc-title pc-title-logo"><img src="assets/pulsars-logo.png" width="320" height="320" alt="">Pulsars</h3>
+            </div>
+          <div class="pc-row">
+            <div class="pc-media">
+              <figure class="pc-visual pc-shot"><img src="assets/pulsars.jpg" alt="Page d’accueil de Pulsars : une bibliothèque de cours avec une communauté autour" data-i18n-alt="proj.pulsars.alt" width="1600" height="1004" loading="lazy"></figure>
+            </div>
+            <div class="pc-info">
+            <p class="pc-desc" data-i18n="proj.pulsars">Plateforme d’apprentissage open source : une bibliothèque de cours (maths, physique, informatique, cryptographie…) avec exercices corrigés et annales, plus un forum, des salons et des guildes pour progresser ensemble. API en Rust, front en Nuxt.</p>
+            <ul class="pc-tags"><li>Rust</li><li>API REST</li><li>Nuxt</li><li>JavaScript</li></ul>
+            <p class="pc-links">
+              <a class="pc-link" href="https://pulsars.science/" target="_blank" rel="noopener"><span data-i18n="proj.site">Voir le site</span> <span aria-hidden="true">↗</span></a>
+              <a class="pc-link" href="https://github.com/Pulsars-science" target="_blank" rel="noopener"><span>GitHub</span> <span aria-hidden="true">↗</span></a>
+            </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="pcard">
+          <div class="pc-head">
+            <p class="pc-meta"><span class="pc-n">02</span><span class="ld rs">Rust</span><span class="pc-wip" data-i18n="proj.design">En conception</span><span data-i18n="proj.oss">Open source</span></p>
+            <h3 class="pc-title">Oxyde</h3>
+          </div>
+          <div class="pc-row">
+            <div class="pc-media">
+              <div class="pc-visual pc-flow">
+                <p class="pf-title" data-i18n="ox.title">Comment ça marche</p>
+                <ol class="pf-steps">
+                  <li><strong data-i18n="ox.s1">Le joueur choisit un niveau</strong></li>
+                  <li><strong data-i18n="ox.s2">Oxyde lance son instance</strong><span data-i18n="ox.s2d">Une machine rien que pour lui, créée à la demande.</span></li>
+                  <li>
+                    <strong data-i18n="ox.s3">Il relève le défi</strong>
+                    <div class="pf-modes">
+                      <div><b data-i18n="ox.ctf">Hacking</b><span data-i18n="ox.ctfd">Attaquer une cible volontairement vulnérable pour trouver le flag.</span></div>
+                      <div><b data-i18n="ox.code">Code</b><span data-i18n="ox.coded">Écrire du code qui doit passer une série de tests.</span></div>
+                    </div>
+                  </li>
+                  <li><strong data-i18n="ox.s4">Oxyde valide et attribue les points</strong><span data-i18n="ox.s4d">Un flag unique par instance empêche de partager la réponse.</span></li>
+                </ol>
+                <ul class="pf-safe" data-i18n-aria="ox.safe" aria-label="Isolation de chaque instance">
+                  <li data-i18n="ox.safe1">Isolée avec gVisor</li>
+                  <li data-i18n="ox.safe2">Sans accès à Internet</li>
+                  <li data-i18n="ox.safe3">Supprimée après 60 min</li>
+                </ul>
+              </div>
+            </div>
+            <div class="pc-info">
+              <p class="pc-desc" data-i18n="proj.oxyde">Plateforme open source qui lance à la demande des environnements isolés, pour deux usages : des niveaux de hacking où trouver un flag sur une cible vulnérable, et des exercices de code validés par des tests. Chaque joueur a sa propre instance, avec Docker et gVisor pour l’isolation.</p>
+              <ul class="pc-tags"><li>Rust</li><li>axum</li><li>tokio</li><li>Docker</li><li>gVisor</li><li>SQLite</li></ul>
+              <p class="pc-links">
+                <a class="pc-link" href="https://github.com/Pulsars-science/Oxyde" target="_blank" rel="noopener"><span>GitHub</span> <span aria-hidden="true">↗</span></a>
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-cta">
+      <p class="eyebrow" data-n="04" data-i18n="foot.kicker">Contact</p>
+      <h2 class="foot-title" data-i18n="foot.title">Une alternance à pourvoir&nbsp;? Parlons-&#8288;en.</h2>
+      <div class="foot-actions">
+        <a class="foot-mail" href="mailto:lefortjoachim@pm.me">lefortjoachim@pm.me <span aria-hidden="true">↗</span></a>
+        <a class="btn btn-li" href="https://www.linkedin.com/in/joachim-lefort/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="foot-grid">
+      <nav aria-labelledby="foot-nav">
+        <h3 id="foot-nav" data-i18n="foot.nav">Naviguer</h3>
+        <ul>
+          <li><a href="#experiences" data-i18n="dock.xp">Expériences</a></li>
+          <li><a href="#langages" data-i18n="dock.stack">Langages</a></li>
+          <li><a href="#projets" data-i18n="dock.projects">Projets</a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-work">
+        <h3 id="foot-work" data-i18n="foot.work">Projets</h3>
+        <ul>
+          <li><a href="https://pulsars.science/" target="_blank" rel="noopener">Pulsars <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://github.com/Pulsars-science/Oxyde" target="_blank" rel="noopener">Oxyde <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+      <nav aria-labelledby="foot-social">
+        <h3 id="foot-social" data-i18n="foot.social">Me retrouver</h3>
+        <ul>
+          <li><a href="https://github.com/0jikuji0" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://www.linkedin.com/in/joachim-lefort/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+          <li><a href="https://blackenium.com/" target="_blank" rel="noopener">Blackenium <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="foot-bottom">
+      <p>© 2026 Joachim Lefort</p>
+      <p data-i18n="foot.made">Conçu et développé par moi-même.</p>
+      <a href="#top" data-i18n="foot.top">Retour en haut ↑</a>
+    </div>
+  </div>
+  <p class="foot-word" aria-hidden="true">Joachim</p>
+</footer>
+
+<script src="i18n.js"></script>
+<script src="main.js"></script>
+<script src="globe.js"></script>
+</body>
+</html>
