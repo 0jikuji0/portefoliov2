@@ -242,7 +242,7 @@ a { color: inherit; }
 .xc-you .ctas { margin-top: 8px; }
 .edu { margin-top: clamp(56px, 7vw, 88px); }
 .edu-kicker { margin-bottom: 20px; }
-.edu-logo img { max-width: 150px; }
+.edu-logo img { width: 150px; max-width: 100%; }
 .chip { padding: 5px 12px; border-radius: 999px; background: var(--bg-2); font-family: var(--f-mono); font-size: 12.5px; font-weight: 500; }
 
 .langs { position: relative; z-index: 2; padding-block: clamp(80px, 10vw, 140px) clamp(110px, 12vw, 170px); border-top: 1px solid var(--line); }
